@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/faroop.iml" filepath="$PROJECT_DIR$/faroop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-customer/faroop-dubbo-customer.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-customer/faroop-dubbo-customer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-interface/faroop-dubbo-interface.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-interface/faroop-dubbo-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-provider/faroop-dubbo-provider.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-provider/faroop-dubbo-provider.iml" />
+    </modules>
+  </component>
+</project>
