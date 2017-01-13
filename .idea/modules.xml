@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-customer/faroop-dubbo-customer.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-customer/faroop-dubbo-customer.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-interfaces/faroop-dubbo-interfaces.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-interfaces/faroop-dubbo-interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-interfaces/faroop-dubbo-interfaces.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-interfaces/faroop-dubbo-interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-provider/faroop-dubbo-provider.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-provider/faroop-dubbo-provider.iml" />
     </modules>
   </component>
