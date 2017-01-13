@@ -4,6 +4,7 @@ package cn.nest;
  * Hello world!
  */
 
+import cn.nest.facde.HelloService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -31,6 +32,7 @@ public class DubboConsumerApplication implements CommandLineRunner {
 
     @Override
     public void run(String... strings) throws Exception {
-
+        HelloService iHelloService = (HelloService) factory.getBean("iHelloService");
+        iHelloService.sayHello("botter");
     }
 }

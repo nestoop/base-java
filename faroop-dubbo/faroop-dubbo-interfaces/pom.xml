@@ -8,7 +8,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>faroop-dubbo-interfaces</artifactId>
-    <packaging>jar</packaging>
 
     <name>faroop-dubbo-interfaces</name>
     <url>http://maven.apache.org</url>
