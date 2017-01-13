@@ -11,6 +11,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="faroop-datasource-rw" />
         <module name="faroop-dubbo-customer" />
         <module name="faroop-dubbo-interfaces" />
         <module name="faroop-dubbo-provider" />
@@ -18,11 +19,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="faroop" target="1.8" />
+      <module name="faroop-datasource-rw" target="1.8" />
       <module name="faroop-dubbo" target="1.8" />
       <module name="faroop-dubbo-customer" target="1.8" />
       <module name="faroop-dubbo-interface" target="1.8" />
       <module name="faroop-dubbo-interfaces" target="1.8" />
       <module name="faroop-dubbo-provider" target="1.8" />
+      <module name="faroop-java-adavce" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
