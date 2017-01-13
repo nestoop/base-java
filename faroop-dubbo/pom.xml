@@ -15,6 +15,7 @@
     <modules>
         <module>faroop-dubbo-provider</module>
         <module>faroop-dubbo-customer</module>
+        <module>faroop-dubbo-interfaces</module>
     </modules>
 
     <properties>
@@ -22,5 +23,17 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>1.4.3.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

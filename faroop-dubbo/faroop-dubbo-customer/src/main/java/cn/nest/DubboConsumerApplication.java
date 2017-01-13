@@ -18,7 +18,8 @@ public class DubboConsumerApplication implements CommandLineRunner {
     ApplicationContext factory = new ClassPathXmlApplicationContext("classpath:spring-dubbo-consumer.xml");
 
     public static void main(String[] args) {
-        new SpringApplicationBuilder().main(DubboConsumerApplication.class).web(false).run(args);
+        new SpringApplicationBuilder().sources(DubboConsumerApplication.class).web(false).run(args);
+
         while (true) {
             try {
                 System.in.read();
