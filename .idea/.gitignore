@@ -7,3 +7,13 @@
 *.iml
 out
 gen
+/.idea/
+/encodings.xml
+/misc.xml
+/modules.xml
+/vcs.xml
+/copyright/
+/libraries/
+/compiler.xml
+/.gitignore
+/workspace.xml
