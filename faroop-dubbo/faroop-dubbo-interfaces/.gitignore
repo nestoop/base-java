@@ -1,4 +1,5 @@
-#
+
+/target/
 /.idea/.name
 /.idea/compiler.xml
 /.idea/
@@ -11,5 +12,3 @@
 /.idea/encodings.xml
 /.idea/copyright/
 /faroop-parent.iml
-
-/target/

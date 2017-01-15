@@ -11,6 +11,7 @@ import cn.nest.facde.HelloService;
 public class HelloServiceImpl implements HelloService {
     @Override
     public String sayHello(String s) {
+        System.out.println("dubbo customer param value: " + s);
         return "say hello :" + s;
     }
 }
