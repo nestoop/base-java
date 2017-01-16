@@ -15,6 +15,7 @@
         <module name="faroop-dubbo-customer" />
         <module name="faroop-dubbo-interfaces" />
         <module name="faroop-dubbo-provider" />
+        <module name="faroop-rabbitmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,8 @@
       <module name="faroop-dubbo-interfaces" target="1.8" />
       <module name="faroop-dubbo-provider" target="1.8" />
       <module name="faroop-java-adavce" target="1.8" />
+      <module name="faroop-mq" target="1.8" />
+      <module name="faroop-rabbitmq" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
