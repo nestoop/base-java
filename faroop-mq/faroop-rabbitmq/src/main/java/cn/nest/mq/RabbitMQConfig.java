@@ -38,11 +38,16 @@ public class RabbitMQConfig implements RabbitListenerConfigurer {
     @Autowired
     private ConnectionFactory connectionFactory;
 
-    @Bean
-    public Queue appQueue() {
-        return new Queue(MQ_APP_QUEUE, false);
+    private Queue instanceQueue(String queueName) {
+        Queue queue = new Queue(queueName, false);
+        queue.setIgnoreDeclarationExceptions(false);
+        return queue;
     }
 
+    @Bean
+    public Queue appQueue() {
+        return instanceQueue(MQ_APP_QUEUE);
+    }
 
     @Bean
     public TopicExchange topicExchange() {
@@ -50,7 +55,7 @@ public class RabbitMQConfig implements RabbitListenerConfigurer {
     }
 
     @Bean
-    public Binding bingApp(TopicExchange topicExchange, Queue appQueue) {
+    public Binding bindingApp(TopicExchange topicExchange, Queue appQueue) {
         return BindingBuilder.bind(appQueue).to(topicExchange).with(MQ_EXCHANGE_APP_KEY);
     }
 

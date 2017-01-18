@@ -10,8 +10,6 @@
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-provider/faroop-dubbo-provider.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-provider/faroop-dubbo-provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-java-adavce/faroop-java-adavce.iml" filepath="$PROJECT_DIR$/faroop-java-adavce/faroop-java-adavce.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-mq/faroop-mq.iml" filepath="$PROJECT_DIR$/faroop-mq/faroop-mq.iml" />
-      <module fileurl="file://$PROJECT_DIR$/faroop-mq/faroop-mq.iml" filepath="$PROJECT_DIR$/faroop-mq/faroop-mq.iml" />
-      <module fileurl="file://$PROJECT_DIR$/faroop-mq/faroop-rabbitmq/faroop-rabbitmq.iml" filepath="$PROJECT_DIR$/faroop-mq/faroop-rabbitmq/faroop-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-mq/faroop-rabbitmq/faroop-rabbitmq.iml" filepath="$PROJECT_DIR$/faroop-mq/faroop-rabbitmq/faroop-rabbitmq.iml" />
     </modules>
   </component>
