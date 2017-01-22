@@ -16,6 +16,7 @@
         <module>faroop-dubbo-provider</module>
         <module>faroop-dubbo-customer</module>
         <module>faroop-dubbo-interfaces</module>
+        <module>faroop-dubbo-mock</module>
     </modules>
 
     <properties>

@@ -1,14 +1,24 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
 
-/target/
-/.idea/.name
-/.idea/compiler.xml
-/.idea/
-/.idea/.gitignore
-/.idea/libraries/
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/vcs.xml
-/.idea/workspace.xml
-/.idea/encodings.xml
-/.idea/copyright/
-/faroop-parent.iml
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
