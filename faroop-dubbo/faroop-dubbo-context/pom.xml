@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.nest</groupId>
-	<artifactId>faroop-dubbo-mock</artifactId>
+	<artifactId>faroop-dubbo-context</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>faroop-dubbo-mock</name>
-	<description>faroop-dubbo-mock project for Spring Boot</description>
+	<name>faroop-dubbo-context</name>
+	<description>faroop-dubbo-context project for Spring Boot</description>
 
 	<parent>
 		<groupId>cn.nest</groupId>

@@ -16,8 +16,14 @@
         <module>faroop-dubbo-provider</module>
         <module>faroop-dubbo-customer</module>
         <module>faroop-dubbo-interfaces</module>
-        <module>faroop-dubbo-mock</module>
+        <module>faroop-dubbo-context</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

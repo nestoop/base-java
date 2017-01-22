@@ -16,6 +16,8 @@
     <bytecodeTargetLevel>
       <module name="faroop" target="1.8" />
       <module name="faroop-annotation" target="1.8" />
+      <module name="faroop-cache" target="1.8" />
+      <module name="faroop-cache-redis" target="1.8" />
       <module name="faroop-datasource-rw" target="1.8" />
       <module name="faroop-dubbo" target="1.8" />
       <module name="faroop-dubbo-context" target="1.8" />
