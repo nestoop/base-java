@@ -30,7 +30,6 @@ public class DubboConsumerApplication implements CommandLineRunner {
         }
     }
 
-    @Override
     public void run(String... strings) throws Exception {
         HelloService iHelloService = (HelloService) factory.getBean("helloService");
         System.out.println(iHelloService.sayHello("botter"));

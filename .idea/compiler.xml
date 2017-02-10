@@ -6,28 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="faroop-cache-redis" />
         <module name="faroop-datasource-rw" />
+        <module name="faroop-dubbo-context" />
         <module name="faroop-dubbo-customer" />
         <module name="faroop-dubbo-interfaces" />
         <module name="faroop-dubbo-provider" />
         <module name="faroop-rabbitmq" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="faroop" target="1.8" />
-      <module name="faroop-annotation" target="1.8" />
+    <bytecodeTargetLevel target="1.8">
       <module name="faroop-cache" target="1.8" />
       <module name="faroop-cache-redis" target="1.8" />
       <module name="faroop-datasource-rw" target="1.8" />
       <module name="faroop-dubbo" target="1.8" />
       <module name="faroop-dubbo-context" target="1.8" />
-      <module name="faroop-dubbo-customer" target="1.8" />
-      <module name="faroop-dubbo-interface" target="1.8" />
+      <module name="faroop-dubbo-customer" target="1.6" />
       <module name="faroop-dubbo-interfaces" target="1.8" />
-      <module name="faroop-dubbo-mock" target="1.8" />
       <module name="faroop-dubbo-provider" target="1.8" />
       <module name="faroop-java-adavce" target="1.8" />
       <module name="faroop-mq" target="1.8" />
+      <module name="faroop-parent" target="1.8" />
       <module name="faroop-rabbitmq" target="1.8" />
     </bytecodeTargetLevel>
   </component>

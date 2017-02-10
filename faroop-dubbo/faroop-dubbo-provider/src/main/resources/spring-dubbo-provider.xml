@@ -7,6 +7,6 @@
 
     <bean id="helloService" class="cn.nest.service.HelloServiceImpl" />
 
-    <dubbo:service interface="cn.nest.facde.HelloService" ref="helloService" />
+    <dubbo:service interface="cn.nest.facde.HelloService" ref="helloService"  mock="cn.nest.facde.HelloServiceMock"/>
 
 </beans>
