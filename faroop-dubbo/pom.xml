@@ -17,6 +17,7 @@
         <module>faroop-dubbo-customer</module>
         <module>faroop-dubbo-interfaces</module>
         <module>faroop-dubbo-context</module>
+        <module>faroop-dubbo-prodvider-someone</module>
     </modules>
     <dependencies>
         <dependency>

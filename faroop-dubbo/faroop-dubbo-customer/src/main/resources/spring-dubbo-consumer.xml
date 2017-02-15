@@ -21,6 +21,7 @@
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:reference id="helloService" interface="cn.nest.facde.HelloService" mock="true" timeout="1000" check="false"/>
+    <dubbo:reference id="helloSomeOneService" interface="cn.nest.facde.HelloSomeOneService" mock="true" timeout="1000" check="false"/>
     <dubbo:application name="dubbo-customer-application"/>
     <dubbo:protocol name="dubbo"/>
     <dubbo:registry address="zookeeper://127.0.0.1:2181"/>

@@ -5,9 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <bean id="helloService" class="cn.nest.service.HelloServiceImpl" />
+    <bean id="helloSomeOneService" class="cn.nest.service.HelloSomeOneServiceImpl" />
 
-    <dubbo:service interface="cn.nest.facde.HelloService" ref="helloService"  mock="cn.nest.facde.HelloServiceMock"/>
+    <dubbo:service interface="cn.nest.facde.HelloService" ref="helloSomeOneService"  mock="cn.nest.facde.HelloServiceMock"/>
 
-    <dubbo:reference id="helloSomeOneService" interface="cn.nest.facde.HelloSomeOneService" mock="true" timeout="1000" check="false"/>
 </beans>

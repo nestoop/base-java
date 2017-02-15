@@ -1,6 +1,7 @@
 package cn.nest.service;
 
 import cn.nest.facde.HelloService;
+import com.alibaba.dubbo.rpc.RpcContext;
 
 /**
  * Created by perk
@@ -18,6 +19,10 @@ public class HelloServiceImpl implements HelloService {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }*/
+
+        boolean isCustomer = RpcContext.getContext().isProviderSide();
+        System.out.println("provider iscustomer :" + isCustomer);
+
         return "say hello :" + s;
     }
 }
