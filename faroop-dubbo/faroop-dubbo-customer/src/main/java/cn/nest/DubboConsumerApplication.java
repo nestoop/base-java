@@ -35,17 +35,5 @@ public class DubboConsumerApplication implements CommandLineRunner {
     public void run(String... strings) throws Exception {
         HelloService iHelloService = (HelloService) factory.getBean("helloService");
         System.out.println(iHelloService.sayHello("botter"));
-        boolean isCustomer = RpcContext.getContext().isConsumerSide();
-        System.out.println("customer iscustomer :" + isCustomer);
-        String ip = RpcContext.getContext().getRemoteHost();
-        System.out.println("customer ip:" + ip);
-        String applicationName = RpcContext.getContext().getUrl().getParameter("dubbo-customer-application");
-        System.out.println("customer applicationName :" + applicationName);
-
-        HelloSomeOneService helloSomeOneService = (HelloSomeOneService) factory.getBean("helloSomeOneService");
-        System.out.println(helloSomeOneService.saySomeOne("botter is someones"));
-
-
-
     }
 }

@@ -6,7 +6,6 @@
 	<groupId>cn.nest</groupId>
 	<artifactId>faroop-dubbo-context</artifactId>
 	<version>1.0-SNAPSHOT</version>
-	<packaging>jar</packaging>
 
 	<name>faroop-dubbo-context</name>
 	<description>faroop-dubbo-context project for Spring Boot</description>
@@ -24,16 +23,6 @@
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -53,12 +42,6 @@
 			<version>1.2.21</version>
 		</dependency>
 
-		<dependency>
-			<groupId>cn.nest</groupId>
-			<artifactId>faroop-dubbo-interfaces</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
 		<dependency>
 			<groupId>com.101tec</groupId>
@@ -67,15 +50,5 @@
 		</dependency>
 
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
 
 </project>

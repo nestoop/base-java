@@ -49,8 +49,6 @@ public class DubboRpcContext {
         }
     }
 
-
-
     public void setName(String name) {
         this.name = name;
     }
