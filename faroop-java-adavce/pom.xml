@@ -14,6 +14,7 @@
     <url>http://maven.apache.org</url>
     <modules>
         <module>faroop-datasource-rw</module>
+        <module>faroop-design-pattern</module>
     </modules>
 
     <properties>

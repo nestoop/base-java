@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/faroop-cache/faroop-cache.iml" filepath="$PROJECT_DIR$/faroop-cache/faroop-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-cache/faroop-cache-redis/faroop-cache-redis.iml" filepath="$PROJECT_DIR$/faroop-cache/faroop-cache-redis/faroop-cache-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-java-adavce/faroop-datasource-rw/faroop-datasource-rw.iml" filepath="$PROJECT_DIR$/faroop-java-adavce/faroop-datasource-rw/faroop-datasource-rw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faroop-java-adavce/faroop-design-pattern/faroop-design-pattern.iml" filepath="$PROJECT_DIR$/faroop-java-adavce/faroop-design-pattern/faroop-design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-context/faroop-dubbo-context.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-context/faroop-dubbo-context.iml" />
       <module fileurl="file://$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-customer/faroop-dubbo-customer.iml" filepath="$PROJECT_DIR$/faroop-dubbo/faroop-dubbo-customer/faroop-dubbo-customer.iml" />

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="faroop-cache-redis" />
         <module name="faroop-datasource-rw" />
+        <module name="faroop-design-pattern" />
         <module name="faroop-dubbo-context" />
         <module name="faroop-dubbo-customer" />
         <module name="faroop-dubbo-interfaces" />
@@ -20,6 +21,7 @@
       <module name="faroop-cache" target="1.8" />
       <module name="faroop-cache-redis" target="1.8" />
       <module name="faroop-datasource-rw" target="1.8" />
+      <module name="faroop-design-pattern" target="1.5" />
       <module name="faroop-dubbo" target="1.5" />
       <module name="faroop-dubbo-context" target="1.8" />
       <module name="faroop-dubbo-customer" target="1.6" />
