@@ -13,7 +13,7 @@ public class TestService implements ITestService {
 
     @Override
     public String testMethod(String code) {
-        System.out.println("request params code = " + code);
+        System.out.println("[TestService] request params code = " + code);
         return "testMethod";
     }
 }

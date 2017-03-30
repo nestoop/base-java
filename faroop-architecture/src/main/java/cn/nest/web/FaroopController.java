@@ -16,7 +16,12 @@ public class FaroopController {
     FaroopManager faroopManager;
 
     @RequestMapping(value = "test", method = RequestMethod.POST)
-    public @ResponseBody  String test(@RequestBody String code) {
-        return faroopManager.testReource(code);
+    public @ResponseBody  String test() {
+        return faroopManager.testReource("test","90999999");
+    }
+
+    @RequestMapping(value = "test2", method = RequestMethod.POST)
+    public @ResponseBody  String test3() {
+        return faroopManager.testReource("test2","990");
     }
 }
