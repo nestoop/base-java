@@ -1,6 +1,6 @@
 package cn.nest.service;
 
-import cn.nest.annotion.InterfaceAnnotation;
+import cn.nest.annotion.ResourceAnnotation;
 import cn.nest.interfaces.ITestService;
 
 /**
@@ -8,7 +8,7 @@ import cn.nest.interfaces.ITestService;
  * on 17-3-29.
  */
 @SuppressWarnings("unused")
-@InterfaceAnnotation(type = "test", description = "test interface")
+@ResourceAnnotation(type = "test", description = "test interface")
 public class TestService implements ITestService {
 
     @Override

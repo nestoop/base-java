@@ -14,7 +14,7 @@ import java.lang.annotation.*;
 @Documented
 @Component
 @Inherited
-public @interface InterfaceAnnotation {
+public @interface ResourceAnnotation {
 
     String type() default "";
 

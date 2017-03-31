@@ -32,7 +32,7 @@ public class AopAnnotationUtil {
             return null;
         }
 
-        InterfaceAnnotation annotation = getAnnotation(obj, InterfaceAnnotation.class);
+        ResourceAnnotation annotation = getAnnotation(obj, ResourceAnnotation.class);
 
         return annotation == null?null:annotation.type();
     }

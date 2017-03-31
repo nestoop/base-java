@@ -1,7 +1,7 @@
 package cn.nest.factory;
 
 import cn.nest.annotion.AopAnnotationUtil;
-import cn.nest.annotion.InterfaceAnnotation;
+import cn.nest.annotion.ResourceAnnotation;
 import cn.nest.interfaces.ITestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -32,7 +32,7 @@ public class InterfaceServiceFactory {
         //get all use InterfaceAnnotion
         for (ITestService iTestService : iTestServices) {
             //get type interface implement class
-            InterfaceAnnotation annotation = AopAnnotationUtil.getAnnotation(iTestService, InterfaceAnnotation.class);
+            ResourceAnnotation annotation = AopAnnotationUtil.getAnnotation(iTestService, ResourceAnnotation.class);
 
             if (annotation != null) {
                 if (testMap.containsKey(annotation.type())) {
