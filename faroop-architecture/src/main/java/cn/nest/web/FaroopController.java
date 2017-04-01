@@ -1,11 +1,11 @@
 package cn.nest.web;
 
-import cn.nest.manager.FaroopManager;
+import cn.nest.manager.ResourceManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Created by botter-common
+ * Created by botter
  * on 17-3-29.
  */
 @RestController
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 public class FaroopController {
 
     @Autowired
-    FaroopManager faroopManager;
+    ResourceManager faroopManager;
 
     @RequestMapping(value = "test", method = RequestMethod.POST)
     public @ResponseBody  String test() {

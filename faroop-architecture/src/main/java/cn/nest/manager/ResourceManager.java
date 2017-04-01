@@ -1,6 +1,6 @@
 package cn.nest.manager;
 
-import cn.nest.factory.InterfaceServiceFactory;
+import cn.nest.factory.ResourceFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,10 +9,10 @@ import org.springframework.stereotype.Component;
  * on 17-3-29.
  */
 @Component
-public class FaroopManager {
+public class ResourceManager {
 
     @Autowired
-    private InterfaceServiceFactory interfaceServiceFactory;
+    private ResourceFactory interfaceServiceFactory;
 
 
     public String testReource(String type, String code) {

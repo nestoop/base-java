@@ -15,11 +15,11 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @SuppressWarnings("unused")
 @Component
-public class InterfaceServiceFactory {
+public class ResourceFactory {
 
     private static Map<String, ITestService> testMap;
 
-    public InterfaceServiceFactory () {
+    public ResourceFactory() {
         testMap = new ConcurrentHashMap<>();
     }
 
