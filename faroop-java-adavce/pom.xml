@@ -16,6 +16,7 @@
         <module>faroop-datasource-rw</module>
         <module>faroop-design-pattern</module>
         <module>faroop-messageconverter</module>
+        <module>faroop-netty</module>
     </modules>
 
     <properties>
