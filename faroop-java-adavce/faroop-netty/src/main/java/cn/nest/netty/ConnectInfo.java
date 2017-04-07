@@ -1,4 +1,4 @@
-package cn.nest;
+package cn.nest.netty;
 
 /**
  * Created by botter-common

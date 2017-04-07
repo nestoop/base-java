@@ -1,4 +1,4 @@
-package cn.nest;
+package cn.nest.netty;
 
 import com.alibaba.fastjson.JSON;
 import io.netty.buffer.ByteBuf;

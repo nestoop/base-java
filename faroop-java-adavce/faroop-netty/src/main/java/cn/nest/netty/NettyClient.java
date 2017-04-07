@@ -1,5 +1,6 @@
-package cn.nest;
+package cn.nest.netty;
 
+import cn.nest.netty.ClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;

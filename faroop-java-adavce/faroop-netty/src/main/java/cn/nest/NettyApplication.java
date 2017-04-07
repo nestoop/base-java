@@ -1,5 +1,6 @@
 package cn.nest;
 
+import cn.nest.netty.NettyClient;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
