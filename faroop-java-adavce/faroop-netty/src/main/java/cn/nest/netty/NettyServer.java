@@ -6,8 +6,6 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
-import java.io.*;
-
 /**
  * Created by botter
  * on 17-4-5.
@@ -15,7 +13,6 @@ import java.io.*;
 public class NettyServer {
 
     public static void main(String[] args) {
-
 
         EventLoopGroup bossGroup = new NioEventLoopGroup();
 
@@ -45,31 +42,5 @@ public class NettyServer {
             workGroup.shutdownGracefully();
             bossGroup.shutdownGracefully();
         }
-
     }
-
-    public static void createCSVFile(ConnectInfo connectInfo) {
-        BufferedWriter csvFileOutputStream = null;
-        try {
-            File csvFile = new File("/home/botter-common/connectInfo.csv");
-            // UTF-8使正确读取分隔符","
-            csvFileOutputStream = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(
-                    csvFile), "UTF-8"), 1024);
-            // 写入文件内容
-            csvFileOutputStream.write((connectInfo.getEndTime()-connectInfo.getStartTime())+ "");
-            csvFileOutputStream.newLine();
-
-            csvFileOutputStream.flush();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                csvFileOutputStream.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-    }
-
 }

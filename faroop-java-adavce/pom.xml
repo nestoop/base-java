@@ -17,6 +17,7 @@
         <module>faroop-design-pattern</module>
         <module>faroop-messageconverter</module>
         <module>faroop-netty</module>
+        <module>faroop-websocket</module>
     </modules>
 
     <properties>
