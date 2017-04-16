@@ -16,7 +16,7 @@ public class WebSocketHandler extends TextWebSocketHandler {
 
     private volatile static List<WebSocketSession> sessions = Collections.synchronizedList(new ArrayList<>());
 
-    private ExecutorService executor = new ThreadPoolExecutor(Runtime.getRuntime().availableProcessors(), 10, 120L, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(1000));
+//    private ExecutorService executor = new ThreadPoolExecutor(Runtime.getRuntime().availableProcessors(), 10, 120L, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(1000));
 
 
     @Override
@@ -39,13 +39,14 @@ public class WebSocketHandler extends TextWebSocketHandler {
     @Override
     protected void handleTextMessage(WebSocketSession session, TextMessage message) throws Exception {
         super.handleTextMessage(session, message);
+        System.out.println("handleTextMessage message body= " + message.getPayload());
 
-        executor.execute(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("handleTextMessage message body= " + message.getPayload());
-            }
-        });
+//        executor.execute(new Runnable() {
+//            @Override
+//            public void run() {
+//
+//            }
+//        });
 
     }
 
