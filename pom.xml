@@ -11,6 +11,7 @@
         <module>faroop-mq</module>
         <module>faroop-cache</module>
         <module>faroop-architecture</module>
+        <module>faroop-desiger-principle</module>
     </modules>
     <packaging>pom</packaging>
 

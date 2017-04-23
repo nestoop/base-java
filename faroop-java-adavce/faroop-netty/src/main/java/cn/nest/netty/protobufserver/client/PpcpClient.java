@@ -29,7 +29,7 @@ public class PpcpClient {
                         .option(ChannelOption.SO_KEEPALIVE, true)
                         .handler(new ClientChannelHandler());
 
-                ChannelFuture channelFuture = bootstrap.connect("127.0.0.1",8999).sync();
+                ChannelFuture channelFuture = bootstrap.connect("127.0.0.1",9000).sync();
 
                 channelFuture.channel().closeFuture().sync();
             } catch (Exception e) {
@@ -78,7 +78,7 @@ public class PpcpClient {
             // send msg to server
             MsgProto.Request.Builder requestBuilder = MsgProto.Request.newBuilder();
             requestBuilder.setCode("FFFFFFFFFFFFFFF");
-            requestBuilder.setType("Base");
+            requestBuilder.setType("send");
             requestBuilder.setUrl(90);
 
             MsgProto.Request request = requestBuilder.build();
