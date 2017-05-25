@@ -1,7 +1,7 @@
 package cn.nest.netty.protobufserver;
 
+import cn.nest.netty.msg.MsgProto;
 import cn.nest.netty.protobufserver.handler.ProtoBufMessageHandler;
-import cn.nest.protobuf.entities.MsgProto;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -40,7 +40,7 @@ public class PpcpNettyServer {
                         }
                     });
 
-            ChannelFuture channelFuture = bootstrap.bind(8999).sync();
+            ChannelFuture channelFuture = bootstrap.bind(9008).sync();
 
             channelFuture.channel().closeFuture().sync();
 

@@ -1,6 +1,6 @@
 package cn.nest.netty.protobufserver.client;
 
-import cn.nest.protobuf.entities.MsgProto;
+import cn.nest.netty.msg.MsgProto;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -10,6 +10,10 @@ import io.netty.handler.codec.protobuf.ProtobufDecoder;
 import io.netty.handler.codec.protobuf.ProtobufEncoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32FrameDecoder;
 import io.netty.handler.codec.protobuf.ProtobufVarint32LengthFieldPrepender;
+import io.netty.util.concurrent.Future;
+import io.netty.util.concurrent.GenericFutureListener;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by botter-common
@@ -29,7 +33,7 @@ public class PpcpClient {
                         .option(ChannelOption.SO_KEEPALIVE, true)
                         .handler(new ClientChannelHandler());
 
-                ChannelFuture channelFuture = bootstrap.connect("127.0.0.1",9000).sync();
+                ChannelFuture channelFuture = bootstrap.connect("127.0.0.1",9008).sync();
 
                 channelFuture.channel().closeFuture().sync();
             } catch (Exception e) {
@@ -83,7 +87,40 @@ public class PpcpClient {
 
             MsgProto.Request request = requestBuilder.build();
 
-            ctx.channel().writeAndFlush(request);
+            ChannelFuture future = ctx.channel().writeAndFlush(request);
+
+           future.addListener(new ChannelFutureListener() {
+               @Override
+               public void operationComplete(ChannelFuture channelFuture) throws Exception {
+
+                   channelFuture.get(1, TimeUnit.SECONDS);
+
+                   Channel channel = channelFuture.channel();
+
+                   if (channelFuture.isSuccess()) {
+                       System.out.println("success");
+                   }
+
+
+                   if (channelFuture.isDone()) {
+                       System.out.println("done");
+                   }
+
+
+                   if (channelFuture.isCancelled()) {
+                       System.out.println("Cancelled");
+                   }
+
+
+
+
+               }
+           });
+
+
+
+
+
         }
 
         @Override
@@ -98,7 +135,7 @@ public class PpcpClient {
 
         @Override
         protected void channelRead0(ChannelHandlerContext channelHandlerContext, MsgProto.Request request) throws Exception {
-
+            System.out.println("[client] msg = " + request.toString());
         }
     }
 

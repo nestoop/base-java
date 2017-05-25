@@ -32,7 +32,7 @@ public class NettyServer {
                         }
                     });
 
-            ChannelFuture channelFuture = bootstrap.bind(9000).sync();
+            ChannelFuture channelFuture = bootstrap.bind(9008).sync();
 
             channelFuture.channel().closeFuture().sync();
 
