@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class ResourceManager {
 
     @Autowired
-    private ResourceFactory interfaceServiceFactory;
+    private ResourceFactory resourceFactory;
 
 
     public String testReource(String type, String code) {
@@ -21,6 +21,6 @@ public class ResourceManager {
             return null;
         }
 
-        return interfaceServiceFactory.getServiceImpl(type).testMethod(code);
+        return resourceFactory.getServiceImpl(type).testMethod(code);
     }
 }
