@@ -19,6 +19,7 @@
         <module>base-netty</module>
         <module>base-websocket</module>
         <module>base-webflux</module>
+        <module>base-mqtt</module>
     </modules>
 
     <properties>
